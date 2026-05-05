@@ -1,0 +1,16 @@
+:root {
+  --bg-primary: #F4F5FB;
+  --bg-secondary: #FFFFFF;
+
+  --text-primary: #080B12;
+  --text-secondary: #374151;
+  --text-tertiary: #9CA3AF;
+
+  --brand: #CA3884;
+  --brand-hover: #A52C6B;
+  --danger: #C93847;
+  --white: #FFFFFF;
+
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0; 
+}
