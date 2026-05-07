@@ -14,3 +14,54 @@
   --border-primary: #D1D5DB;
   --border-hover: #B9C2D0; 
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 39.18rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  margin: 1.5rem auto 0;
+}
+
+.header-page {
+  margin-top: 3.875rem;
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    color: var(--brand);
+    margin-bottom: 1rem;
+
+    & img {
+      width: 16px;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+
