@@ -204,3 +204,25 @@ main {
   }
 }
 
+@media (max-width: 390px) {
+  .container {
+    max-width: 20.375rem;
+
+    & .logo {
+      display: none;
+    }
+
+    & main {
+      & form {
+        & .header-form {
+          flex-direction: column;
+        }
+      }
+
+      & .alert {
+        margin-bottom: 2.125rem;
+      }
+    }
+  }
+}
+
