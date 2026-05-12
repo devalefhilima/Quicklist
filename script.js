@@ -7,7 +7,7 @@ let list = document.querySelector(".list")
 form.addEventListener("submit", (event) => {
   event.preventDefault()
 
-  const itemName = valueInput.value
+  const itemName = valueInput.value.trim()
 
   if (itemName === "") {
     alert("Por favor, insira um item.")
