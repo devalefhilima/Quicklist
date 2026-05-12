@@ -1,7 +1,7 @@
 const form = document.querySelector("form")
 const valueInput = document.getElementById("item-input")
+const buttonDelete = document.getElementById("delete-button")
 let list = document.querySelector(".list")
-
 
 
 form.addEventListener("submit", (event) => {
@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) => {
       <label>${itemName}</label>
     </div>
 
-    <button class="btn" type="button" aria-label="Remover item">
+    <button class="delete-button" type="button" aria-label="Remover item">
       <img src="./assets/Frame-3.svg" alt="Remover item">
     </button>
   `
@@ -33,4 +33,18 @@ form.addEventListener("submit", (event) => {
   valueInput.value = ""
 
 })
+
+list.addEventListener("click", (event) => {
+  const clickedElement = event.target
+
+  const isDeleteButton = clickedElement.closest(".delete-button")
+
+  if (isDeleteButton) {
+    const item = isDeleteButton.closest("li")
+
+    item.remove()
+  }
+  
+})
+
 
